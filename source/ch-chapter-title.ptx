@@ -4,7 +4,7 @@
   <title>Chapter Title</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> Limits are important. For <me>f(x)=2x+1</me> consider that given any <me>\epsilon>0</me> we may choose <me>\delta=\epsilon/2</me>. etc... </p>
   </introduction>
 
   <!-- include sections -->
