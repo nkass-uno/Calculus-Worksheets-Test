@@ -4,8 +4,18 @@
   <title>Chapter Title</title>
 
   <introduction>
-    <p> Limits are important. For <me>f(x)=2x+1</me> consider that given any <me>\epsilon>0</me> we may choose <me>\delta=\epsilon/2</me>. etc... </p>
+    <p> Limits are important. For <m>f(x)=2x+1</m> consider that given any <m>\epsilon>0</m> we may choose <m>\delta=\epsilon/2</m>. etc... </p>
   </introduction>
+
+<axiom>
+    <title>Optional</title>
+    <creator>Peano</creator>
+  <statement>
+    <p>
+      Here's the statement of the axiom.
+    </p>
+  </statement>
+</axiom>
 
   <!-- include sections -->
   <xi:include href="sec-section-name.ptx" />
