@@ -1,8 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-nk" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Nick's Section</title>
-<p>
-    asdsaf
+    <title>Nick's Section: Limits of Trigonometric and Exponential Functions</title>
+<theorem xml:id="thm-squeeze">
+    <statement>
+        <p>
+            Let <m>I</m> be an open interval containing the number <m>c</m>.  If <m>f</m>, <m>g</m>, and <m>h</m> are function such that 
+            <me>
+                g(x)\leq f(x)\leq h(x)
+            </me>
+            for all values of <m>x</m> in the interval <m>I</m> (except possibly for <m>c</m>) and 
+            <me>
+                \lim_{x\to c}g(x)=\lim_{x\to c}h(x)=L,
+            </me>
+            then <m>\lim_{x\to c}f(x)=L</m> as well.</p>
+    </statement>
+</theorem>
+
+<example><!-- 2  \pm (x^2-2x+1) -->
+    <p>Suppose that <m>f</m> is  a function such that <me>2-(x-1)^2\leq f(x)\leq 2+(x-1)^2</me> for all <m>x</m>.  Since <m> \lim_{x\to 1}2-(x-1)^2=2</m> and <m>\lim_{x\to 1}2+(x-1)^2=2</m>, we may conclude that <m>\lim_{x\to 1}f(x)=2</m> by virtue of the Squeeze Theroem.</p>
+</example>
+
+<exercise>
+    <title>Try It</title>
+    <statement>
+        <p> Suppose that <m>f</m> is a function such that <me>x+1\leq f(x)\leq e^x</me> for all <m>x</m>. Can the Squeeze Theorem be used to find the value of <m>\lim_{x\to 1}f(x)</m>?</p>
+    </statement>
+    <choices>
+    <choice><statement><p>Yes, <m>\lim_{x\to 1}f(x)=2</m>.</p></statement></choice>
+    <choice><statement><p>Yes, <m>\lim_{x\to 1}f(x)=e^2</m>.</p></statement></choice>
+    <choice correct="yes"><statement><p>No, it is not possible to determine the value of <m>\lim_{x\to 1}f(x)</m>.</p></statement> <feedback>
+        <p>
+            We cannot use the Squeeze Theroem to determine the value of <m>\lim_{x\to 1}f(x)</m> since <m>\lim_{x\to 1}x=1\neq \lim_{x\to 1}e^x</m>.
+        </p>
+    </feedback></choice>
+    </choices>
+   
+</exercise>
+
+
+    <subsection><title>Two Indeterminate Limits</title>
+<p>The limit <m>\lim_{\theta\to 0}\frac{\sin(\theta)}{\theta}</m> cannot be evaluated directly by substituting <m>\theta=0</m>.  However, it can be shown that <m>\cos\theta\leq \frac{\sin\theta}{\theta}\leq \frac{1}{\cos\theta}</m> for values of <m>\theta</m> near <m>0</m>.  Since <m>\lim_{\theta\to 0}\cos\theta=1</m> and <m>\lim_{\theta\to 0}\cos\theta=1</m>, we may thus conclude from the Squeeze Theroem that <m>\lim_{\theta\to 0}\frac{\sin\theta}{\theta}=1</m>. 
+
+        <corollary xml:id="cor-triglims">
+            <statement>
+                <p>
+                    <me>
+                        \lim_{\theta\to 0}\frac{\sin(\theta)}{\theta}=1\quad\text{and}\quad \lim_{\theta\to 0}\frac{1-\cos(\theta)}{\theta}=0
+                    </me>
+                </p>
+            </statement>
+        </corollary>
+
 </p>
+<p>Once we know these two trigonometric limits, we can use them along with limit properties...</p>
+
+
+
+</subsection>
+
+
+    <exercises xml:id="exercises-nkstuasdfa">
+        <exercise><statement><p>
+            <m>\lim_{x\to 0}\frac{2x-5\sin(x)}{x}</m>
+        </p></statement>
+            <answer><p>
+                -13
+            </p></answer>
+        </exercise>
+        <exercise><statement><p>
+            <m>\lim_{x\to 0}\frac{\tan(x)}{x}</m>
+        </p></statement>
+            <answer><p>
+                1
+            </p></answer>
+        </exercise>
+        
+        <exercise><statement><p>
+            <m>\lim_{x\to 0}\frac{\sin(2x)-x\cos(3x)}{4x}</m>
+        </p></statement>
+            <answer><p>
+                1/4
+            </p></answer>
+        </exercise>
+
+
+    </exercises>
+    
 </section>
