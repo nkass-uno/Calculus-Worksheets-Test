@@ -10,5 +10,6 @@
   <!-- include sections -->
   <xi:include href="sec-testing.ptx"/>
   <xi:include href="sec-jr.ptx"/>  
-  <xi:include href="sec-cw.ptx"/>
+  <xi:include href="sec-cw.ptx"/>  
+  <xi:include href="sec-nk.ptx"/>
 </chapter>
