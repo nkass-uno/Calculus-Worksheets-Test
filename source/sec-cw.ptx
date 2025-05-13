@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-cw" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Cong's Section</title>
+    <title>Continuity</title>
 <p>
-    asdsaf
+    <definition xml:id="def-">
+        <statement>
+            <p>
+                We say <m>f(x)</m> is continuous at <m>x=a </m> if
+                <p>
+                <m>f(a)</m> is well defined; </p>
+               <p> <m>\displaystyle\lim_{x\to a}f(x)=f(a)</m></p>.
+            
+            </p>
+        </statement>
+    </definition>
 </p>
 </section>
