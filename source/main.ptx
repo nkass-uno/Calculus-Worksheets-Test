@@ -6,7 +6,7 @@
 
   <book xml:id="my-great-book">
     <title>Nick, Janice, and Cong's Calculus Adventure</title>
-    <subtitle>Testing out some ideas at a conference...</subtitle>
+    <subtitle>Testing out some ideas at a conference.  TEST.</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
