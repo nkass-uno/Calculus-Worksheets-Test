@@ -31,7 +31,7 @@
     <choice><statement><p>Yes, <m>\lim_{x\to 1}f(x)=e^2</m>.</p></statement></choice>
     <choice correct="yes"><statement><p>No, it is not possible to determine the value of <m>\lim_{x\to 1}f(x)</m>.</p></statement> <feedback>
         <p>
-            We cannot use the Squeeze Theroem to determine the value of <m>\lim_{x\to 1}f(x)</m> since <m>\lim_{x\to 1}x=1\neq \lim_{x\to 1}e^x</m>.
+            We cannot use the Squeeze Theroem to determine the value of <m>\lim_{x\to 1}f(x)</m> since <m>\lim_{x\to 1}x+1\neq \lim_{x\to 1}e^x</m>.
         </p>
     </feedback></choice>
     </choices>
