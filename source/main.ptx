@@ -6,17 +6,19 @@
 
   <book xml:id="my-great-book">
     <title>Nick, Janice, and Cong's Calculus Adventure</title>
-    <subtitle>Just testing and stuff</subtitle>
+    <subtitle>Testing out some ideas at a conference...</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
+    <xi:include href="./ch-limits.ptx" />
+
     <!-- Include chapters -->
-    <xi:include href="./ch-chapter-title.ptx" />
+<!--    <xi:include href="./ch-chapter-title.ptx" /> -->
 
 
     <!-- Include backmatter -->
-    <xi:include href="./backmatter.ptx" />
+    <!-- <xi:include href="./backmatter.ptx" /> -->
 
   </book>
 </pretext>

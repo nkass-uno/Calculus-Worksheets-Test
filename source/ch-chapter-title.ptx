@@ -4,18 +4,74 @@
   <title>Chapter Title</title>
 
   <introduction>
-    <p> Limits are important. For <m>f(x)=2x+1</m> consider that given any <m>\epsilon>0</m> we may choose <m>\delta=\epsilon/2</m>. etc... </p>
+    <p> Limits are very  important. For <m>f(x)=2x+1</m> consider that given any <m>\epsilon>0</m> we may choose <m>\delta=\epsilon/2</m>. etc... </p>
   </introduction>
 
-<axiom>
-    <title>Optional</title>
-    <creator>Peano</creator>
+  <section> <title>Some random stuff to test with</title>
+  <p>Here is a <term>term</term> which I wish to define. Here is some <em>emphasis</em>
+  The following is inline... 
+  <me> \lim_{h\to 0^+}\frac{1}{2h}\int_{x-h}^{x+h}f(t)\,dt=f(x)
+  </me>
+
+  </p>
+<p>
+  <md>
+    <mrow>x \amp = r\cos\theta</mrow>
+    <mrow>y \amp = r\sin\theta</mrow>
+  </md>
+</p>
+<p>
+  Some other paragraph with <q>quotes</q>.  Here are three things you will learn in the course:
+</p>
+<ol><li>How to evaluate limits.</li><li>Something else</li></ol>
+
+<p>Here is some data below...</p>
+<tabular>
+   <col right="medium" /><col right="medium" /><col /> 
+  <row bottom="medium"> 
+  <cell><m>x</m></cell><cell>1</cell><cell>2</cell></row>
+  <row><cell><m>f(x)</m></cell><cell>12</cell><cell>24</cell></row></tabular>
+<definition xml:id="def-adsf">
   <statement>
-    <p>
-      Here's the statement of the axiom.
+    <p>A <term>common refinement</term> of two partitions <m>U</m> and <m>V</m> is ... 
+      
     </p>
   </statement>
-</axiom>
+</definition>
+
+<theorem xml:id="thm-adsf">
+  <statement>
+    <p>If <m>f'(x)=0</m> on an interval <m>[a,b]</m>, then <m>f(x)=C</m> on <m>[a,b]</m>.      
+    </p>
+  </statement>
+</theorem>
+<proof>
+  <p>
+    Set <m>C=f(a)</m>. For any <m>x\in (a,b]</m> we know that <me>f(x)-f(a)=f'(\xi)(x-a)</me> for some <m>\xi\in(a,b)</m> by the Mean Value Theorem. Since <m>f'(\xi)=0</m>, <m>f(x)=f(a)=C</m> as desired.
+  </p>
+</proof>
+
+<exercise label="vector-space-dimension">
+  <title>True/False</title>
+  
+  <statement correct="no">
+    <p>
+      Every continuous function is differentiable.
+    </p>
+  </statement>
+   <feedback>
+    <p>
+      Consider the function <m>f(x)=|x|</m>, which has a sharp corner at <m>x=0</m>.
+    </p>
+  </feedback>
+  <hint>
+    <p>
+      Are all differentiable functions continuous?
+    </p>
+  </hint>
+  </exercise>
+
+</section>
 
   <!-- include sections -->
   <xi:include href="sec-section-name.ptx" />
