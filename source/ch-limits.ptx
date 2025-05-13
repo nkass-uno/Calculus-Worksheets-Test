@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-limits" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Limits</title>
+
+  <introduction>
+    <p> Limits are very  important.</p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-testing.ptx"/>
+
+</chapter>
