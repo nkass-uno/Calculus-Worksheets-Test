@@ -12,4 +12,8 @@
   <xi:include href="sec-jr.ptx"/>  
   <xi:include href="sec-cw.ptx"/>  
   <xi:include href="sec-nk.ptx"/>
+  <xi:include href="ws-test1.ptx"/>
+  <solutions worksheet="solution">
+      <title>Solutions to Worksheets</title>
+    </solutions>
 </chapter>

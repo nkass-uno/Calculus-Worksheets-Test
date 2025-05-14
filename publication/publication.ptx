@@ -11,6 +11,7 @@
 
 <publication>
   <common>
+    <exercise-worksheet statement="yes" hint="yes" answer="no" solution="no" />
     <!-- Level at which are html files generated (chapter/section/etc): -->
       <!--<chunking level="1" />-->
 
