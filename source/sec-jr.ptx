@@ -1,8 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-jr" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Janice's Section</title>
-<p>
-    asdsaf
+    <title>Indeterminant Limits of the form 0/0</title>
+    <definition>
+        <statement>
+            <p>
+            What do we do if we have a limit, that is, <m>\lim_{x\to c}f(x)=0/0</m>? Does <m> 0/0 = 1</m>? NO - an <term>indeterminant limit</term> is what that type of limit is called. It means we can't <em>determine</em> the limit of the function <em>YET.</em>
+            </p>
+        </statement>
+    </definition>
+
+    <example>
+    <p>Let's explore some manipulations  we can perform on <m>f(x)</m> so that we can make <m> f(x)=\frac{x^2-1}{x-1}</m> into an <em>equivalent</em> expression. 
+     
+    </p>  
+    <p>
+        Did you notice that <m>x^2 - 1</m> is factorable? It factors into <m>(x-1)(x+1)</m>. Now we can write <m>\frac{x^2 - 1}{x-1}</m> as <m>\frac{(x+1)(x-1)}{x-1} = x-1</m>. The <m>x-1</m> factor cancels out in the numerator and demoninator. We are now left with <m>\displaystyle\lim_{x\to 1}x + 1=2</m>. 
+    </p>
+</example>
+
+<activity label="factor">
+  <title>Matching</title>
+  <statement>
+    <p>
+      Match each limit statement in the left column with an equivalent limit statement in the right column.
+    
+    
 </p>
+  </statement>
+  <cardsort>
+  <match>
+  <premise order="1"><m>\displaystyle\lim_{x\to -2}\frac{x^2 + 5x +6}{x+2}</m></premise>
+  <response><m> \lim_{x \to -2}{x+3} </m></response>
+  </match>
+  <match>
+  <premise order="2"><m>\lim_{x\to 3}\frac{x^2 - 9}{x-3}</m></premise>
+  <response><m>\lim_{x \to 3} x+ 3</m></response>
+  </match>
+  </cardsort>
+</activity>
+<example>
+    <p>Now let's explore some manipulations  we can perform on another function with an <em>indeterminant</em> limit so that we can make <m> \lim_{x \to 9}\frac{\sqrt{x}- 3}{x-9}</m> into an <em>equivalent</em> expression. 
+     
+    </p>  
+    <p>
+        Reminder: <m>(a+b)(a-b) = a^2 - b^2</m>. This is useful in this problem. We can multiply numerator and denominator by <m>\sqrt{x} + 3</m>. <m>\lim_{x \to 9}\frac {\sqrt{x} - 3)(\sqrt{x}+3}{(x-9)(\sqrt{x} + 3)} = \lim_{x \to 9}\frac {x-9}{(x - 9) (\sqrt{x} + 3)}</m>. Now we can write <m>\lim_{x\to 9}\frac{1}{\sqrt{x} + 3}=6</m>. 
+    </p>
+</example>
+
+<activity label="conjugate_1">
+  <title>Matching</title>
+  <statement>
+    <p>
+      Match each limit statement in the left column with an equivalent limit statement in the right column.
+    
+    
+</p>
+  </statement>
+  <cardsort>
+  <match>
+  <premise order="1"><m>\lim_{x\to 4}\frac{2 - \sqrt{x}}{x - 4}</m></premise>
+  <response><m> \lim_{x \to 4}\frac{-1}{2 + \sqrt{x}} </m></response>
+  </match>
+  <match>
+  <premise order="2"><m>\lim_{x\to 4}\frac{\sqrt{x} - 2}{x-4}</m></premise>
+  <response><m>\lim_{x \to 4} \frac{1}{2 +\sqrt{x} }</m></response>
+  </match>
+  </cardsort>
+</activity>
+<example>
+    <p>Let's explore some manipulations  we can perform on <m>f(x)</m> so that we can make <m> f(x)=\frac{x^2-1}{x-1}</m> into an <em>equivalent</em> expression. 
+     
+    </p>  
+    <p>
+        Did you notice that <m>x^2 - 1</m> is factorable? It factors into <m>(x-1)(x+1)</m>. Now we can write <m>\frac{x^2 - 1}{x-1}</m> as <m>\frac{(x+1)(x-1)}{x-1} = x-1</m>. The <m>x-1</m> factor cancels out in the numerator and demoninator. We are now left with <m>\displaystyle\lim_{x\to 1}x + 1=2</m>. 
+    </p>
+</example>
+
+<exercise >
+  <title>Matching</title>
+  <statement>
+    <p>
+      Match each function in the left column with an equivalent function in the right column.
+    
+    
+</p>
+  </statement>
+  <cardsort>
+  <match>
+  <premise order="1"><m>\displaystyle\lim_{x\to -2}\frac{x^2 + 5x +6}{x+2}</m></premise>
+  <response><m> \lim_{x \to -2}{x+3} </m></response>
+  </match>
+  <match>
+  <premise order="2"><m>\displaystyle\lim_{x\to 3}\frac{x^2 - 9}{x-3}</m></premise>
+  <response><m>\lim_{x \to 3} x+ 3</m></response>
+  </match>
+  </cardsort>
+</exercise>
+
+
+<exercises label="exercises-structuredjr10">
+  <title>Exercises</title>
+  <subexercises>
+  <title>Easy</title>
+  <exercise>
+    <statement><p>
+        Compute <m>\displaystyle\lim_{x\to 3}2x+1</m>
+    </p></statement>
+    <answer><p>7</p></answer></exercise>
+    </subexercises>
+    <subexercises>
+        <title>Medium</title>
+    
+        <exercise>
+            <statement>
+                <p>
+                 <m>\displaystyle\lim_{x\to \pi/2}\cos(x)</m>   
+                </p>
+
+            </statement><answer><p>0</p></answer>
+        </exercise>
+        
+    </subexercises>
+</exercises>
 </section>
+
