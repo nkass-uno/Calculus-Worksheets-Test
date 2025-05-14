@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-cw" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Continuity</title>
+    <title>Cong's section</title>
 <p>
-    <definition xml:id="def-">
+    <definition xml:id="def-continuity">
         <statement>
             <p>
-                We say <m>f(x)</m> is continuous at <m>x=a </m> if
-                <p>
-                <m>f(a)</m> is well defined; </p>
-               <p> <m>\displaystyle\lim_{x\to a}f(x)=f(a)</m></p>.
-            
+                We say <m>f(x)</m> is <term>continuous</term> at <m>x=a</m> if
+                <m>f(a)</m> is well defined and
+               <me>\displaystyle\lim_{x \to a}f(x)=f(a)</me>.
             </p>
         </statement>
     </definition>
 </p>
+
+<example>
+    <p>The graph of <m>f(x)</m> is given below. Find the following limits. </p>  
+       <figure>
+            <image source="f1.png"/>
+        </figure>  
+        
+</example>
 </section>
