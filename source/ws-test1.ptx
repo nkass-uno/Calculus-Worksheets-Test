@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="ws-testing123">
+    <title>Worksheet with Limits</title>
+
+    <exercise workspace="0.5in">
+    <statement><p>
+        Compute <m>\displaystyle\lim_{x\to 3}2x+1</m>
+    </p></statement>
+    <answer><p>7</p></answer></exercise>
+
+    <exercise workspace="1in">
+            <statement>
+                <p>
+                 <m>\displaystyle\lim_{x\to \pi/2}\cos(x)</m>   
+                </p>
+
+            </statement><answer><p>0</p></answer>
+        </exercise>
+
+</worksheet>
