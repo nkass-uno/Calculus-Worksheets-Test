@@ -18,7 +18,17 @@
     <p>The graph of <m>f(x)</m> is given below. Find the following limits. </p>  
        <figure>
             <image source="f1.png"/>
-        </figure>  
-        
+        </figure> 
+       
+
+    <ol>
+    <li> <m>\displaystyle\lim_{x \to a}f(x)= </m></li>
+       <li> <m>\displaystyle\lim_{x \to b}f(x)=</m></li>
+        <li><m>\displaystyle\lim_{x \to c}f(x)=</m></li>
+      
+  </ol>
+
 </example>
+
+
 </section>

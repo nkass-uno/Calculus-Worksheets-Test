@@ -1,0 +1,14 @@
+<setup>
+  <p>Hello</p>
+  <selectFromSequence name="a" from="-2" to="2" exclude="0"/>
+  <selectFromSequence name="b" from="-2" to="16" exclude="$a"/>
+</setup>
+What would you like to pick?<answer><mathInput name="studentInput"></mathInput>42</answer>
+<p><m>poly($studentInput)=$$poly($studentInput)</m></p>
+<p><m>f(x)=</m><function name="f"><abs>x</abs></function></p>
+<p><m>h(x)=</m><function name="poly">$a x^3-$b x</function></p>
+<graph>
+<!---<function name="g" copysource="f" domain="(-4,4)"> </function>
+  <derivative>$g</derivative>-->
+  $poly
+  </graph>
