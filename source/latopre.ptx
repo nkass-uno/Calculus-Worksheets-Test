@@ -1,0 +1,14 @@
+
+<p>
+I'd like to convert latex to pretext
+
+<men>
+I like the identity
+
+\lt men\gt 
+\sin ^{2} x + \cos ^{2} x = 1
+\lt /men\gt 
+
++++saMePaR
+</men>
+</p>
