@@ -2,7 +2,16 @@
 
 <section xml:id="sec-nk" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Nick's Section: Limits of Trigonometric and Exponential Functions</title>
-<theorem xml:id="thm-squeeze">
+
+<subsection><title>Continuity of Trigonometric and Exponential Functions</title>
+<p>It can be shown that the trigonometric and exponential functions such as <m>\sin x</m>, <m>\cos x</m>, <m>\tan x</m>, <m>e^x</m>, etc. are continuous at every input value where they are defined.  As a consequence of this, many limits of this sort may be evalauted by simply <q>plugging in</q> the limiting value.  </p>
+<example><p><me>\lim_{x\to \pi/3}\tan x=\tan(\pi/3)=\sqrt{3}</me></p></example>
+<example><p><me>\lim_{x\to \pi/2}\frac{\sin x}{x}=\frac{\sin(\pi/2)}{\pi/2}=\frac{1}{\pi/2}=\frac{2}{\pi}</me></p></example>
+</subsection>
+
+<subsection><title>The Squeeze Theorem</title>
+<p>The more difficult question is how to evaluate limits of these sorts of functions which are in the indeterminate form <m>0/0</m>.  One valuable tool to help with limits of these sorts is the Squeeze Theorem.</p>
+<theorem xml:id="thm-squeeze"><title>The Squeeze Theorem</title>
     <statement>
         <p>
             Let <m>I</m> be an open interval containing the number <m>c</m>.  If <m>f</m>, <m>g</m>, and <m>h</m> are function such that 
@@ -17,13 +26,12 @@
     </statement>
 </theorem>
 
-<example><!-- 2  \pm (x^2-2x+1) -->
-    <p>Suppose that <m>f</m> is  a function such that <me>2-(x-1)^2\leq f(x)\leq 2+(x-1)^2</me> for all <m>x</m>.  Since <m> \lim_{x\to 1}2-(x-1)^2=2</m> and <m>\lim_{x\to 1}2+(x-1)^2=2</m>, we may conclude that <m>\lim_{x\to 1}f(x)=2</m> by virtue of the Squeeze Theroem.</p>
+<example>
+    <p>Suppose that <m>f</m> is a function such that <me>\overbrace{1+2x-x^2}^{g(x)}\leq f(x)\leq \overbrace{x^2-2x+3}^{h(x)}</me> for all <m>x</m>. Since <me> \lim_{x\to 1}(1+2x-x^2)=2\quad\text{and}\quad\lim_{x\to 1}(x^2-2x+3)=2</me>, we may conclude that <m>\lim_{x\to 1}f(x)=2</m> by virtue of the Squeeze Theorem.</p>
 </example>
 
 <exercise>
-    <title>Try It</title>
-    <statement>
+    <statement> 
         <p> Suppose that <m>f</m> is a function such that <me>x+1\leq f(x)\leq e^x</me> for all <m>x</m>. Can the Squeeze Theorem be used to find the value of <m>\lim_{x\to 1}f(x)</m>?</p>
     </statement>
     <choices>
@@ -37,10 +45,10 @@
     </choices>
    
 </exercise>
+</subsection>
 
-
-    <subsection><title>Two Indeterminate Limits</title>
-<p>The limit <m>\lim_{\theta\to 0}\frac{\sin(\theta)}{\theta}</m> cannot be evaluated directly by substituting <m>\theta=0</m>.  However, it can be shown that <m>\cos\theta\leq \frac{\sin\theta}{\theta}\leq \frac{1}{\cos\theta}</m> for values of <m>\theta</m> near <m>0</m>.  Since <m>\lim_{\theta\to 0}\cos\theta=1</m> and <m>\lim_{\theta\to 0}\cos\theta=1</m>, we may thus conclude from the Squeeze Theroem that <m>\lim_{\theta\to 0}\frac{\sin\theta}{\theta}=1</m>. 
+    <subsection><title>Two Important Limits</title>
+<p>It can be shown by a variety of arguments that <m>\cos\theta\leq \frac{\sin\theta}{\theta}\leq \frac{1}{\cos\theta}</m> for values of <m>\theta</m> near <m>0</m>. Once this is established, the Squeeze Theorem then permits the following conclusions</p>
 
         <corollary xml:id="cor-triglims">
             <statement>
@@ -52,15 +60,43 @@
             </statement>
         </corollary>
 
-</p>
-<p>Once we know these two trigonometric limits, we can use them along with limit properties...</p>
+<p>Once we know these two trigonometric limits, we can use them along with limit properties in a variety of ways illustrated in the following examples.</p>
 
+<example>
+    <statement><p> Evaluate <m>\lim_{x\to 0}\frac{1-\cos x}{2x}</m>.</p></statement>
+    <solution><p>By factoring out the constant <m>1/2</m>, 
+        <me>\lim_{x\to 0}\frac{1-\cos x}{2x} =  \frac{1}{2}\overbrace{\lim_{x\to 0}\frac{1-\cos x}{x}}^{0} =\frac{1}{2}(0)=0</me></p></solution>
+</example>
 
+<example>
+    <statement><p> Evaluate <m>\lim_{x\to 0}\frac{7\sin(x)}{6x}</m>.</p></statement>
+    <solution><p>By factoring out the constant <m>7/6</m>, 
+        <me>\lim_{x\to 0}\frac{7\sin(x)}{6x} =  \frac{7}{6}\overbrace{\lim_{x\to 0}\frac{\sin(x)}{x}}^{1} =\frac{7}{6}(1)=1</me></p></solution>
+</example>
+
+<example>
+    <statement><p> Evaluate <m>\lim_{x\to 0}\frac{\sin(8x)}{x}</m>.</p></statement>
+    <solution><p>Multiplying by the number <m>1</m> will not change the value of the limit.  Here, we choose the form <m>\frac{8}{8}</m>. With this,  
+        <me>\lim_{x\to 0}\frac{\sin(8x)}{x} =  \lim_{x\to 0}\frac{8\sin(8x)}{8x} = 8\lim_{x\to 0}\frac{\sin(8x)}{8x}</me>
+        This final limit is of the form <m>\lim_{\theta\to 0}\frac{\sin(\theta)}{\theta}</m> by taking <m>\theta=8x</m>, and hence 
+        <me>\lim_{x\to 0}\frac{\sin(8x)}{x}=\cdots=8\overbrace{\lim_{x\to 0}\frac{\sin(8x)}{8x}}^{1}=8</me>.</p>
+    </solution>
+</example>
 
 </subsection>
 
 
+
     <exercises xml:id="exercises-nkstuasdfa">
+        <exercise><statement><m>\lim_{x\to 0}\left(3x+4\cos(2x+\pi)\right)</m></statement>
+            <answer><m>-4</m></answer>
+        </exercise>
+
+
+        <exercise><statement>On what intervals is  <m>f(x)=\ln(2x-3)</m> continuous?</statement>
+            <answer><m>(3/2,\infty)</m></answer>
+        </exercise>
+
         <exercise><statement><p>
             <m>\lim_{x\to 0}\frac{2x-5\sin(x)}{x}</m>
         </p></statement>
@@ -68,6 +104,9 @@
                 -13
             </p></answer>
         </exercise>
+
+
+
         <exercise><statement><p>
             <m>\lim_{x\to 0}\frac{\tan(x)}{x}</m>
         </p></statement>
@@ -83,6 +122,8 @@
                 1/4
             </p></answer>
         </exercise>
+
+ 
 
 
     </exercises>

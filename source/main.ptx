@@ -12,6 +12,7 @@
     <xi:include href="./frontmatter.ptx" />
 
     <xi:include href="./ch-limits.ptx" />
+    <xi:include href="./jr-chap2.ptx"/>
 
     <!-- Include chapters -->
 <!--    <xi:include href="./ch-chapter-title.ptx" /> -->
