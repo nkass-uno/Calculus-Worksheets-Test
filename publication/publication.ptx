@@ -12,6 +12,7 @@
 <publication>
   <common>
     <exercise-worksheet statement="yes" hint="yes" answer="no" solution="no" />
+   
     <!-- Level at which are html files generated (chapter/section/etc): -->
       <!--<chunking level="1" />-->
 
@@ -68,7 +69,7 @@
     <!-- For use with a book organized by part, you can set the -->
     <!--  @part-structure to "decorative" or "structural" -->
       <!--<divisions part-structure="decorative" chapter-start="0" level="2"/>-->
-
+<divisions level="2"/>
     <!-- The next elements say how the levels deep to break up the    -->
     <!-- numbering of the respective elements. Can't be more than the -->
     <!-- @level on divisions above.                                   -->
@@ -113,7 +114,8 @@
       <!--<worksheets formatted="yes" />-->
   </latex>
 
-  <html>
+  <html embed-button="yes">
+  
     <!-- A possible attribute for the html tag above is @short-answer-responses, with values either "always" or "graded".  As in: -->
     <!--<html short-answer-responses="always">-->
 

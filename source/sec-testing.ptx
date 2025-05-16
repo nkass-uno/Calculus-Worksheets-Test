@@ -1,75 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-testing" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Testing some ideas... Limits of Functions using Graphs</title>
-    <definition xml:id="def-asdfsadf">
-        <statement>
-            <p>
-            We write <m>\displaystyle\lim_{x\to c}f(x)=L</m> to mean that the <term>two sided limit</term> of the function <m>f</m> as <m>x</m> approaches <m>c</m> is <m>L</m>.
-            </p>
-        </statement>
-    </definition>
-<example>
-    <p>Let's explore the limit of <m>\displaystyle f(x)=\frac{x^2-1}{x-1}</m> as <m>x</m> approaches <m>1</m>.
-    The number <m>x=0.9</m> is fairly close to <m>x=1</m>, and <m>f(0.9)=1.9</m>. ... 
-    </p>  
-</example>
+  <title>Testing some ideas... Limits of Functions using Graphs</title>
 
-<exercise label="test">
-  <title>Matching Limits</title>
-  <statement>
-    <p>
-      Match each expression in the left column with an equivalent value in the right column.
-    
-    <figure xml:id="asdf">
-        <caption>The graph of <m>f</m></caption><image source="piecewise.png" width="80%" />
-    </figure>
+  <definition xml:id="def-asdfsadf">
+    <statement>
+      <p>
+        We write <m>\displaystyle\lim_{x\to c}f(x)=L</m> to mean that the <term>two sided limit</term> of the function <m>f</m> as <m>x</m> approaches <m>c</m> is <m>L</m>.
+      </p>
+    </statement>
+  </definition>
+<p>
+  <c>pip install prefig --update</c>
 </p>
-  </statement>
-  <cardsort>
-  <match>
-  <premise order="1"><m>\displaystyle\lim_{x\to -\infty}f(x)</m></premise>
-  <response>-5</response>
-  </match>
-  <match>
-  <premise order="2"><m>\displaystyle\lim_{x\to \infty}f(x)</m></premise>
-  <response>2</response>
-  </match>
-  </cardsort>
-</exercise>
+
+<figure xml:id="figure-tikz-electronics">
+          <caption>A field plot</caption>
+          <image xml:id="tikz-electronics" width="80%">
+            <shortdescription>
+            A field plot
+            </shortdescription>
+<latex-image>
+	\begin{tikzpicture}[declare function={f(\x, \y)=x-y ;}]
+		\begin{axis}[
+			axis lines=center,
+			view={0}{90},
+			samples=11,
+			cycle list={
+				black, very thick,
+				quiver={
+					u={+1/sqrt(1+f(x,y)^2)}, v={+f(x,y)/sqrt(1+f(x,y)^2)},
+					scale arrows=0.23,
+					every arrow/.append style={},
+				}\\
+			},
+			xmin=-5, xmax=5,
+			ymin=-5, ymax=5,
+			domain=-5:5, y domain=-5:5,
+			xtick=\empty, ytick=\empty]
+			\addplot3[black, very thick,quiver={
+				u={-1/sqrt(1+f(x,y)^2)}, v={-f(x,y)/sqrt(1+f(x,y)^2)},
+				scale arrows=0.23,
+				every arrow/.append style={},
+			}]{0};
+			\addplot3 (x,y,0);
+\end{axis} \end{tikzpicture}
+  </latex-image>
+          </image>
+        </figure>
+
+  <example>
+    <p>
+      Let's explore the limit of <m>\displaystyle f(x)=\frac{x^2-1}{x-1}</m> as <m>x</m> approaches <m>1</m>.
+      The number <m>x=0.9</m> is fairly close to <m>x=1</m>, and <m>f(0.9)=1.9</m>.
+      ...
+    </p>
+  </example>
+
+  <exercise label="test">
+    <title>Matching Limits</title>
+
+    <statement>
+      <p>
+        Match each expression in the left column with an equivalent value in the right column.
+        <figure xml:id="asdf">
+          <caption>The graph of <m>f</m></caption>
+          <image source="piecewise.png" width="80%" />
+          </figure>
+        </p>
+      </statement>
+
+      <cardsort> <match> <premise order="1"><m>\lim_{x\to -\infty}f(x)</m></premise> <response>4</response> </match> <match> <premise order="2"><m>\lim_{x\to \infty}f(x)</m></premise> <response>-2</response> </match>
+         <match> <premise order="3">4</premise> <response><m>\lim_{x\to -4}f(x)</m></response> </match> <match> <premise order="4"><m>\lim_{x\to -1^+}f(x)</m></premise> <response>1</response> </match> <match> <premise order="5"><m>\lim_{x\to -1}f(x)</m></premise> <response>DNE</response> </match> 
+         <!--<match> 
+          <premise order="6">DNE</premise><response><m>\lim_{x\to 2}f(x)</m></response></match> -->
+          <match> <premise order="6">DNE</premise> <response><m>\lim_{x\to 2}f(x)</m></response> </match>
+        </cardsort>
+    </exercise>
+
+    <figure xml:id="sadjfsadkjf">
+      <caption>This function has differentiability issues</caption>
+      <image width="60%">
+        <prefigure xmlns="https://prefigure.org" label="nondiff-function">
+        <xi:include href="prefigure/nondiff.xml"/>
+        </prefigure>
+      </image>
+    </figure>
 
 
-<figure xml:id="sadjfsadkjf">
-    <caption>This function has differentiability issues</caption>
-   <image width="60%">
-  <prefigure xmlns="https://prefigure.org" label="nondiff-function">
-    <xi:include href="prefigure/nondiff.xml"/>
-  </prefigure>
-</image>
-</figure>
+    <paragraphs>
+      <title>One Thing</title>
 
-<exercises label="exercises-structured">
-  <title>Exercises</title>
-  <subexercises>
-  <title>Easy</title>
-  <exercise>
-    <statement><p>
-        Compute <m>\displaystyle\lim_{x\to 3}2x+1</m>
-    </p></statement>
-    <answer><p>7</p></answer></exercise>
-    </subexercises>
-    <subexercises>
-        <title>Medium</title>
+      <p>
+        Here is a paragraph
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Something Else</title>
+
+      <p>
+        Here is a paragraph
+      </p>
+    </paragraphs>
+
     
-        <exercise>
-            <statement>
-                <p>
-                 <m>\displaystyle\lim_{x\to \pi/2}\cos(x)</m>   
-                </p>
+    <exercises label="exercises-structured">
+    <title>Exercises</title>
 
-            </statement><answer><p>0</p></answer>
-        </exercise>
-        
-    </subexercises>
-</exercises>
-</section>
+    <subexercises>
+    <title>Easy</title>
+
+    <exercise>
+      <statement>
+        <p>
+          Compute <m>\displaystyle\lim_{x\to 3}2x+1</m>
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          7
+        </p>
+      </answer>
+    </exercise>
+    </subexercises> <subexercises>
+    <title>Medium</title>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>\displaystyle\lim_{x\to \pi/2}\cos(x)</m>
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          0
+        </p>
+      </answer>
+    </exercise>
+    </subexercises> </exercises>
+  </section>
