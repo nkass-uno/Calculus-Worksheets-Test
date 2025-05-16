@@ -5,7 +5,87 @@
 <section xml:id="sec-jrchap2" xmlns:xi="http://www.w3.org/2001/XInclude">
 
     
-<p>PASTE HERE</p>
+  <title>Test Review 2</title>
+<exercise xml:id="nondifferentiability">
+  <task>
+  <p> The graph of a function <m>y=f(x)</m> is shown below.  Sketch a graph of the derivative <m>f'</m>, and explain the points at which <m>f</m> is not differentiable.</p>
+<image width="60%">
+    <prefigure xmlns="https://prefigure.org" label="prefigure-diffeq">
+  <diagram dimensions="(300,300)" margins="5" >
+ 
+   <definition>f(x)=(-3/2*x)</definition>
+  
+     <definition>g(x)=(3*(x+3))</definition>
+  
+ 
+   <definition>h(x)=(3*(x-3))</definition>
+  
+     
+  <coordinates bbox="(-4,-4,4,4)">
+    <grid-axes xlabel="x" ylabel="y" />
+    <graph function="f" domain="(-2,2)"/>
+    <graph function="g" domain="(-4,-2)"/>
+    <graph function="h" domain="(2,4)"/>
+    
+       </coordinates>   
+
+</diagram>
+</prefigure>
+</image>
+</task>
+
+  
+<task> 
+    <p> The graph of a function <m>y=f(x)</m> is shown below.  Sketch a graph of the derivative <m>f'</m>, and briefly explain <em>WHY</em> that is the graph of <m>f</m>.</p>
+<image width="60%">
+    <prefigure xmlns="https://prefigure.org" label="prefigure-diff">
+  <diagram dimensions="(300,300)" margins="5" >
+ 
+   <definition>f(x)=((x-1)^3-(2*x+3))</definition>
+    
+     
+  <coordinates bbox="(-4,-16,4,16)">
+    <grid-axes xlabel="x" ylabel="y" />
+    <graph function="f" domain="(-4,4)"/>
+    </coordinates>   
+
+</diagram>
+</prefigure>
+</image>
+</task>
+
+
+</exercise>
+  <objectives xml:id="objectives-structures">
+  <title>Fundamental Structures</title>
+  <introduction>
+    <p>
+      This is an <tag>objectives</tag> element you are reading,
+      and this is its introduction.
+      This early section has really grown and tries to accomplish many things.
+      Not all of them are listed here.
+    </p>
+
+    <p>
+      The equation <m>f(x)= tan^2 x</m>
+    </p>
+  </introduction>
+  <ol>
+    <li xml:id="objective-structure">
+      Display various
+      <q>blocks</q>, fundamental units of the flow.
+    </li>
+    <li>More.</li>
+    <li>Evermore.</li>
+  </ol>
+  <conclusion>
+    <p>
+      This concludes the (incomplete) objectives for this section,
+      so now we can carry-on as before.
+    </p>
+  </conclusion>
+</objectives>
+
 
 
 </section>
