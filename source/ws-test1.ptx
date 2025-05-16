@@ -17,5 +17,44 @@
 
             </statement><answer><p>0</p></answer>
         </exercise>
+ <exercise workspace="0.5in">
+    <statement><p>
+        Compute <m>\displaystyle\lim_{x\to 4}\frac {2x-8}{4-x}</m>
+    </p></statement>
+    <answer><p>-2</p></answer></exercise>
+
+ <exercise workspace="0.5in">
+    <statement><p>
+        Compute <m>\displaystyle\lim_{x\to 16}\frac{\sqrt{x} - 4}{16 - x}</m>
+    </p></statement>
+    <answer><p>\frac{-1}{8}</p></answer></exercise>
+
+    <exercise workspace="0.5in">
+    <statement><p>
+        Use this graph of <m>f(x)</m> to find the limits following the graph.
+    </p>
+    <figure xml:id="lim">
+        <caption></caption>
+        <image width="60%">
+            
+            
+        
+    <prefigure xmlns="https://prefigure.org" label="janice123">
+    <diagram dimensions="(300,300)" margins="5">
+  <definition>f(x)=sqrt((x-3)^2)</definition>
+  
+
+   <definition>g(x)=3</definition>
+  <coordinates bbox="(-2,-2,6,6)">
+    <grid-axes xlabel="x" ylabel="y" />
+    <graph function="f" domain="(-2,4)"/>
+    <graph function="g" domain="(4,6)"/>
+       </coordinates>
+
+</diagram>
+</prefigure>
+        </image>
+</figure></statement>
+   <answer><p>0</p></answer></exercise>
 
 </worksheet>
